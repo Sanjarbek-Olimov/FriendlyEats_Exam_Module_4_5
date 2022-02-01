@@ -146,7 +146,6 @@ class _HomePageState extends State<HomePage> {
       present = present + perPage;
     });
   }
-
   @override
   Widget build(BuildContext context) {
     bool usingDesktop = MediaQuery.of(context).size.width > 1024;
@@ -187,10 +186,11 @@ class _HomePageState extends State<HomePage> {
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold, fontSize: 17),
                               ),
-                              Text(
+                              Expanded(child: Text(
                                 "by rating",
                                 style: TextStyle(color: Colors.grey),
-                              ),
+                              ))
+
                             ],
                           ),
                         )
