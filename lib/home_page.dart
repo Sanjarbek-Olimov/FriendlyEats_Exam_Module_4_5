@@ -190,7 +190,6 @@ class _HomePageState extends State<HomePage> {
                                 "by rating",
                                 style: TextStyle(color: Colors.grey),
                               ))
-
                             ],
                           ),
                         )
