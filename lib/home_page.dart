@@ -186,7 +186,7 @@ class _HomePageState extends State<HomePage> {
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold, fontSize: 17),
                               ),
-                              Expanded(child: Text(
+                              FittedBox(child: Text(
                                 "by rating",
                                 style: TextStyle(color: Colors.grey),
                               ))
