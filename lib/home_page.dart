@@ -181,15 +181,22 @@ class _HomePageState extends State<HomePage> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: const [
-                              Text(
-                                "All Restaurants",
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold, fontSize: 17),
+                              Expanded(
+                                child: Padding(
+                                  padding: EdgeInsets.only(top: 5),
+                                  child: Text(
+                                    "All Restaurants",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold, fontSize: 17),
+                                  ),
+                                ),
                               ),
-                              FittedBox(child: Text(
-                                "by rating",
-                                style: TextStyle(color: Colors.grey),
-                              ))
+                              Expanded(
+                                child: Text(
+                                  "by rating",
+                                  style: TextStyle(color: Colors.grey),
+                                ),
+                              )
                             ],
                           ),
                         )
